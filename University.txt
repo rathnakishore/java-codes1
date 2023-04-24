@@ -1,0 +1,34 @@
+// wap to create a class university with data member reg no int, one def constructor which will initialise the data member by taking input from user a 
+function void print to print reg no. Another class details
+//which inherits the university class with data member string name, char grade, a constructor that will take 3 args of one int, one string, one char 
+to initialise data members 
+//and a function void print to print reg no name and grade.create the object of details class and call both print functions
+
+class university
+{
+	Scanner sc=new Scanner(System.in);
+	int reg_no;
+	university()
+	{
+	reg_no=sc.nextInt();
+	}
+	void print()
+	{
+	System.out.println(reg_no);
+	}
+}
+class details extends university
+{
+	String name;
+	char grade;
+	details(int a, String b, char c)
+	{
+	reg_no=a;
+	name=b;
+	grade=c;
+	}
+	void print()
+	{
+	
+
+	
